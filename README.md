@@ -1,6 +1,6 @@
 # IMRaD Intro — Skill para Claude
 
-Skill para Claude que genera introducciones académicas en formato IMRaD para trabajos de ingeniería universitaria, especialmente del Tec de Monterrey (bloques FJ26 y equivalentes).
+Skill para Claude que genera introducciones académicas en formato IMRaD para trabajos de ingeniería universitaria, especialmente del Tec de Monterrey.
 
 ## ¿Qué hace?
 
