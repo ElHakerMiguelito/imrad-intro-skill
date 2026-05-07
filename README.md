@@ -36,4 +36,4 @@ Desde ese momento, en cualquier chat nuevo escribe `/intro` para activarla.
 
 Diseñada para materias de física aplicada a ingeniería donde se pide un reporte en formato IMRaD. La skill asume que el trabajo combina modelado matemático, simulación o experimento con un problema real de ingeniería.
 
-Desarrollada por un estudiante de Ingeniería en Innovación y Desarrollo en el Tec de Monterrey.
+Desarrollada por un estudiante de Ingeniería en el Tec de Monterrey.
