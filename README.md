@@ -1,24 +1,51 @@
-# IMRaD Intro — Skill para Claude
+# imrad-intro
 
-Skill para Claude que genera introducciones académicas en formato IMRaD para trabajos de ingeniería universitaria, especialmente del Tec de Monterrey.
+Skill para Claude Code que genera introducciones académicas en formato IMRaD para trabajos de ingeniería universitaria, especialmente del Tec de Monterrey.
+
+## Estructura
+
+```
+imrad-intro/
+├── SKILL.md                    # Skill principal
+└── references/
+    └── estilos-intro.md        # Guía de tono y frases de referencia
+```
 
 ## ¿Qué hace?
 
-Te guía paso a paso para redactar introducciones que suenan como las escribiría un académico, no un estudiante. El flujo es:
+Guía el proceso completo de redacción en tres fases:
 
-1. **Contexto** — te hace preguntas sobre tu trabajo antes de hacer nada
-2. **Fuentes** — busca referencias reales y verificables en APA 7, tú las apruebas
-3. **Redacción** — genera la intro con citas, ecuaciones si aplican, y cierre explícito
+1. **Contexto** — preguntas dirigidas sobre el trabajo antes de investigar
+2. **Fuentes** — búsqueda de referencias reales en APA 7, con aprobación del usuario
+3. **Redacción** — intro con citas verificables, ecuaciones si aplican, y cierre explícito
 
 Las introducciones siguen estructura de embudo: gancho → problema real → física → modelo → objetivo → estructura del reporte.
 
-## ¿Cómo instalarla?
+## Instalación
 
-1. Abre [claude.ai](https://claude.ai) y ve a **Settings → Custom instructions**
-2. Copia todo el contenido de `SKILL.md` y pégalo ahí
+### Claude Code (recomendado)
+
+Copia la carpeta completa a tu directorio de skills:
+
+```bash
+# macOS / Linux
+cp -r imrad-intro ~/.claude/skills/
+
+# Windows
+xcopy /E imrad-intro %USERPROFILE%\.claude\skills\imrad-intro\
+```
+
+### Claude.ai (instrucciones personalizadas)
+
+1. Abre [claude.ai](https://claude.ai) → **Settings → Custom instructions**
+2. Copia el contenido de `SKILL.md` y pégalo ahí
 3. Guarda los cambios
 
-Desde ese momento, en cualquier chat nuevo escribe `/intro` para activarla.
+> **Nota:** Con este método `references/estilos-intro.md` no estará disponible. La Fase 2 funcionará pero sin calibración de tono automática.
+
+## Uso
+
+Escribe `/intro` o `/imrad` en cualquier chat para activar la skill.
 
 ## Comandos disponibles
 
@@ -34,6 +61,6 @@ Desde ese momento, en cualquier chat nuevo escribe `/intro` para activarla.
 
 ## Contexto de diseño
 
-Diseñada para materias de física aplicada a ingeniería donde se pide un reporte en formato IMRaD. La skill asume que el trabajo combina modelado matemático, simulación o experimento con un problema real de ingeniería.
+Diseñada para materias de física aplicada a ingeniería donde se pide un reporte en formato IMRaD. Asume que el trabajo combina modelado matemático, simulación o experimento con un problema real de ingeniería.
 
 Desarrollada por un estudiante de Ingeniería en el Tec de Monterrey.
